@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Color Picker</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form action="">
+      <div>
+        <label for="red">Enter a number between 0-255 for R</label>
+        <input type="number" min="0" max="255" id="red" required />
+      </div>
+      <div>
+        <label for="green">Enter a number between 0-255 for G</label>
+        <input type="number" min="0" max="255" id="green" required />
+      </div>
+      <div>
+        <label for="blue">Enter a number between 0-255 for B</label>
+        <input
+          type="number"
+          value="send"
+          min="0"
+          max="255"
+          id="blue"
+          required
+        />
+      </div>
+      <input type="button" value="send" id="send" />
+    </form>
+
+    <div id="container">
+      <div id="box"></div>
+      <input type="button" value="send" id="btn-box" />
+      <div id="empty"></div>
+      <div id="box1"></div>
+      <input type="button" value="send" id="btn-box1" />
+
+      
+      <div id="save-name">
+        <label for="color-name"> 
+          If you want to save the last color give it a name:
+        </label>
+        <input type="text" name="user" id="color-name" required />
+        <input type="button" value="save" id="btn-save" />
+      </div>
+    
+      <ol id="inner-list"></ol>
+
+      <div id="user-pick">
+        <input type="number" name="user-choice" id="user-choice">
+        <input type="button" id="pull" value="pull from list">
+        <div id="user-box"></div>
+      </div>
+
+    </div>
+    
+    <script src="./js/data.js"></script>
+    <script src="./js/js.js"></script>
+  </body>
+</html>
